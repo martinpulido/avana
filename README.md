@@ -1,27 +1,23 @@
-# Avana
+# AVANA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+AVANA es una plantilla de HTML y CSS realizada por [DesignStub](http://www.designstub.com) que voy a utilizar para implementar los conocimientos adquiridos en el curso de Angular 2.
 
-## Development server
+Para ello he añadido dos enlaces a este README donde consultar la versión de la plantilla tal cual la provee DesignStub y la versión en la que he trabajado con Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Web Estática vs Single Page Application
+* *Web*: http://www.designstub.com/projects/avana-minimal-portfolio-template-build-bootstrap/
+* *Vue*: _El código se puede consultar en este mismo proyecto de GitHub. La versión build no está disponible todavía.
 
-## Code scaffolding
+## Herramientas utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* [NodeJS/NPM](https://nodejs.org/es/) - NodeJS como entorno de ejecución de JavaScript y NPM como gestor de paquetes.
+* [Angular CLI](https://github.com/angular/angular-cli) - Angular CLI versión 7.1.4 para generar el *scaffolding* del proyecto
+* [Git](https://git-scm.com/) - Como control de versiones a través de GitHub.
 
-## Build
+## Autores
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* **[DesignStub](http://www.designstub.com)** - De la plantilla HTML, CSS, JS
+* **Santi Martin** - De la implementación de Angular 7 sobre la plantilla de DesignStub.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Licencia
+* De la plantilla de DesignStub: [ Creative Commons Attribution 3.0 License ](https://creativecommons.org/licenses/by/3.0/)
