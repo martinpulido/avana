@@ -61,12 +61,12 @@
   },
   {
     "id" : 3,
-    "title" : "A Brand new Agency",
+    "title" : "A Brand",
     "summary" : "Over 40,000 customers use our themes to power their.",
     "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p><p>Elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.</p>",
     "url" : null,
     "roles" : [
-      "Branding", "Identity", "Web Design"
+      "New Agency", "Branding", "Identity", "Web Design"
     ],
     "highlight_image" : [
       {
@@ -122,15 +122,15 @@
   {
     "id" : 5,
     "title" : "Another Brand",
-    "summary" : "Galerie Anatome based in Milano.",
+    "summary" : "Over 40,000 customers use our themes to power their.",
     "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p><p>Elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.</p>",
     "url" : null,
     "roles" : [
-      "Galleria", "Identity", "Web Design", "UX / UI"
+      "New Agency", "Identity", "Web Design", "UX / UI"
     ],
     "highlight_image" : [
       {
-        "path" : "images/home-images/image-3.jpg",
+        "path" : "images/home-images/image-5.jpg",
         "alt" : "Perdiz - Book"
       }
     ],
