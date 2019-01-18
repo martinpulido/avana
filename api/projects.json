@@ -8,12 +8,10 @@
     "roles" : [
       "Identity", "Branding", "Web Design", "UX / UI"
     ],
-    "highlight_image" : [
-      {
-        "path" : "images/home-images/image-1.jpg",
-        "alt" : "Eliana Dedda - Visit Cards"
-      }
-    ],
+    "highlight_image" : {
+      "path" : "images/home-images/image-1.jpg",
+      "alt" : "Eliana Dedda - Visit Cards"
+    },
     "images" : [
       {
         "path" : "images/work/works-image-1.jpg",
@@ -38,12 +36,10 @@
     "roles" : [
       "Exhibition", "Branding", "Web Design"
     ],
-    "highlight_image" : [
-      {
-        "path" : "images/home-images/image-2.jpg",
-        "alt" : "Studio Thonik - Totebag"
-      }
-    ],
+    "highlight_image" : {
+      "path" : "images/home-images/image-2.jpg",
+      "alt" : "Studio Thonik - Totebag"
+    },
     "images" : [
       {
         "path" : "images/work/works-image-1.jpg",
@@ -68,12 +64,10 @@
     "roles" : [
       "New Agency", "Branding", "Identity", "Web Design"
     ],
-    "highlight_image" : [
-      {
-        "path" : "images/home-images/image-4.jpg",
-        "alt" : "Erica Marley - Visit Card"
-      }
-    ],
+    "highlight_image" : {
+      "path" : "images/home-images/image-4.jpg",
+      "alt" : "Erica Marley - Visit Card"
+    },
     "images" : [
       {
         "path" : "images/work/works-image-1.jpg",
@@ -98,12 +92,10 @@
     "roles" : [
       "Galleria", "Identity"
     ],
-    "highlight_image" : [
-      {
-        "path" : "images/home-images/image-3.jpg",
-        "alt" : "Anatome Milano - Visit Card"
-      }
-    ],
+    "highlight_image" : {
+      "path" : "images/home-images/image-3.jpg",
+      "alt" : "Anatome Milano - Visit Card"
+    },
     "images" : [
       {
         "path" : "images/work/works-image-1.jpg",
@@ -128,12 +120,10 @@
     "roles" : [
       "New Agency", "Identity", "Web Design", "UX / UI"
     ],
-    "highlight_image" : [
-      {
-        "path" : "images/home-images/image-5.jpg",
-        "alt" : "Perdiz - Book"
-      }
-    ],
+    "highlight_image" : {
+      "path" : "images/home-images/image-5.jpg",
+      "alt" : "Perdiz - Book"
+    },
     "images" : [
       {
         "path" : "images/work/works-image-5.jpg",
