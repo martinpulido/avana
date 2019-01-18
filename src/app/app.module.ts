@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
@@ -9,16 +10,27 @@ import { FooterComponent } from './components/footer.component';
 import { HomeComponent } from './components/home.component';
 import { WorkCardComponent } from './components/work-card.component';
 
+// Pipes
+import { ExceptIndexPipe } from './pipes/exceptIndex.pipe';
+import { FirstIndexPipe } from './pipes/firstIndex.pipe';
+import { FirstHalfPipe } from './pipes/firstHalf.pipe';
+import { SecondHalfPipe } from './pipes/secondHalf.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    WorkCardComponent
+    WorkCardComponent,
+    ExceptIndexPipe,
+    FirstIndexPipe,
+    FirstHalfPipe,
+    SecondHalfPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
