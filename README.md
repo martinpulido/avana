@@ -21,3 +21,7 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 
 ## Licencia
 * De la plantilla de DesignStub: [ Creative Commons Attribution 3.0 License ](https://creativecommons.org/licenses/by/3.0/)
+
+## Observaciones
+* Para no montar una API REST propia con unos datos propios voy a crear solamente un JSON con los datos de cada uno de los proyectos en un directorio fuera de _src_ y será el que llame por AJAX con _HttpClient_.
+* La función que hace que aparezcan los proyectos en la Home al hacer scroll se ejecuta en la carga del documento, antes de que hayamos obtenido los datos del JSON (así estaba en la plantilla). Hay que lanzar esa función después de que los datos se hayan recuperado.
