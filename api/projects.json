@@ -2,7 +2,7 @@
   {
     "id" : 1,
     "title" : "Eliana Dedda",
-    "short-name" : "eliana-dedda",
+    "shortname" : "eliana-dedda",
     "summary" : "Personal Brand Identity.",
     "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p><p>Elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.</p>",
     "url" : "https://www.behance.net/elianadedda",
@@ -31,7 +31,7 @@
   {
     "id" : 2,
     "title" : "Studio Thonik",
-    "short-name" : "studio-thonik",
+    "shortname" : "studio-thonik",
     "summary" : "Project for Thonik, design studio based in Amsterdam.",
     "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p><p>Elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.</p>",
     "url" : "http://www.thonik.nl/",
@@ -60,7 +60,7 @@
   {
     "id" : 3,
     "title" : "A Brand",
-    "short-name" : "a-brand",
+    "shortname" : "a-brand",
     "summary" : "Over 40,000 customers use our themes to power their.",
     "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p><p>Elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.</p>",
     "url" : null,
@@ -89,7 +89,7 @@
   {
     "id" : 4,
     "title" : "Anatome Milano",
-    "short-name" : "anatome-milano",
+    "shortname" : "anatome-milano",
     "summary" : "Galerie Anatome based in Paris.",
     "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p><p>Elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.</p>",
     "url" : "https://www.behance.net/gallery/8733279/Anatome-Milano-Brand",
@@ -118,7 +118,7 @@
   {
     "id" : 5,
     "title" : "Another Brand",
-    "short-name" : "another-brand",
+    "shortname" : "another-brand",
     "summary" : "Over 40,000 customers use our themes to power their.",
     "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p><p>Elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.</p>",
     "url" : null,
