@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { routing, appRoutingProviders } from './app.routing';
+
 import { AppComponent } from './app.component';
 
 // Components
@@ -9,6 +11,7 @@ import { HeaderComponent } from './components/header.component';
 import { FooterComponent } from './components/footer.component';
 import { HomeComponent } from './components/home.component';
 import { WorkCardComponent } from './components/work-card.component';
+import { WorkDetailComponent } from './components/work-detail.component';
 
 // Pipes
 import { ExceptIndexPipe } from './pipes/exceptIndex.pipe';
@@ -23,6 +26,7 @@ import { SecondHalfPipe } from './pipes/secondHalf.pipe';
     FooterComponent,
     HomeComponent,
     WorkCardComponent,
+    WorkDetailComponent,
     ExceptIndexPipe,
     FirstIndexPipe,
     FirstHalfPipe,
@@ -30,9 +34,12 @@ import { SecondHalfPipe } from './pipes/secondHalf.pipe';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    routing
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
