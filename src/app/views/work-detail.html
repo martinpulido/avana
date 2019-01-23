@@ -14,7 +14,7 @@
         
         <header role="work-title">
           <h2>{{thisProject.title}}</h2>
-          <a href="{{thisProject.url}}">Visit online <i class="fa fa-external-link" aria-hidden="true"></i></a>
+          <a href="{{thisProject.url}}" *ngIf="thisProject.url !== null">Visit online <i class="fa fa-external-link" aria-hidden="true"></i></a>
         </header>
 
       </div>
