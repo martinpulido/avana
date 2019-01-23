@@ -21,7 +21,4 @@ export class ProjectService {
         // Function to get all projects info
         return this._http.get( this.url );
     }
-    getProjectId(id:number){{
-        // Function to get a project info
-    }}
 }

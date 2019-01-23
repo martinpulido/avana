@@ -10,6 +10,7 @@ export class WorkCardComponent{
     
     @Input('data-title') title:string;
     @Input('data-summary') summary:string;
+    @Input('data-shortname') shortname:string;
     @Input('data-roles') roles:Array<string>;
     @Input('data-image') highlightImage:string;
     @Input('data-image-alt') imageAltText:string;

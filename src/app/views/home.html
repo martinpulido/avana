@@ -15,6 +15,7 @@
       <work-card 
         *ngFor="let project of projects | firstIndex" 
         [data-title]="project.title" 
+        [data-shortname]="project.shortname" 
         [data-summary]="project.summary" 
         [data-roles]="project.roles"
         [data-image]="project.highlight_image.path" [data-image-alt]="project.highlight_image.alt"></work-card>
@@ -30,6 +31,7 @@
           <li *ngFor="let project of projects | exceptIndex:0 | firstHalf" >
             <work-card 
               [data-title]="project.title" 
+              [data-shortname]="project.shortname"
               [data-summary]="project.summary" 
               [data-roles]="project.roles"
               [data-image]="project.highlight_image.path" [data-image-alt]="project.highlight_image.alt"></work-card>
@@ -44,6 +46,7 @@
           <li *ngFor="let project of projects | exceptIndex:0 | secondHalf" >
             <work-card 
               [data-title]="project.title" 
+              [data-shortname]="project.shortname"
               [data-summary]="project.summary" 
               [data-roles]="project.roles"
               [data-image]="project.highlight_image.path" [data-image-alt]="project.highlight_image.alt"></work-card>
