@@ -24,4 +24,10 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 
 ## Observaciones
 * Para no montar una API REST propia con unos datos propios voy a crear solamente un JSON con los datos de cada uno de los proyectos en un directorio fuera de _src_ y será el que llame por AJAX con _HttpClient_.
-* La función que hace que aparezcan los proyectos en la Home al hacer scroll se ejecuta en la carga del documento, antes de que hayamos obtenido los datos del JSON (así estaba en la plantilla). Hay que lanzar esa función después de que los datos se hayan recuperado.
+* La función que hace que aparezcan los proyectos en la Home al hacer scroll se ejecuta en la carga del documento, antes de que hayamos obtenido los datos del JSON (así estaba en la plantilla). Hay que lanzar esa función después de que los datos se hayan recuperado. (En relación con el primer punto del [TODO](#todo)
+* Esa misma función también se aplica en las imágenes de detalle de los trabajos.
+
+## TODO
+[ ] Ver cómo llamar una función de JavaScript externa a TypeScript cuando la carga de los datos del JSON haya finalizado.
+[ ] Parsear las etiquetas HTML que vengan dentro de la respuesta JSON para que se pinten tal cual en el detalle del proyecto.
+[ ] Los roles se pintan por defecto separados por comas sin espacio entre ellos (como vienen del JSON). ¿Recorrer el array para insertar un espacio antes de cada nombre excepto del primero?.
