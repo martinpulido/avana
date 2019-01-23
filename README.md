@@ -28,6 +28,12 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 * Esa misma función también se aplica en las imágenes de detalle de los trabajos.
 
 ## TODO
-[ ] Ver cómo llamar una función de JavaScript externa a TypeScript cuando la carga de los datos del JSON haya finalizado.
-[ ] Parsear las etiquetas HTML que vengan dentro de la respuesta JSON para que se pinten tal cual en el detalle del proyecto.
-[ ] Los roles se pintan por defecto separados por comas sin espacio entre ellos (como vienen del JSON). ¿Recorrer el array para insertar un espacio antes de cada nombre excepto del primero?.
+- [ ] Ver cómo llamar una función de JavaScript externa a TypeScript cuando la carga de los datos del JSON haya finalizado.
+- [X] Parsear las etiquetas HTML que vengan dentro de la respuesta JSON para que se pinten tal cual en el detalle del proyecto. _Solucionado usando '\[innerHTML\]'._:
+~~~~
+<div [innerHTML]="thisProject.description"></div>
+~~~~
+- [X] Los roles se pintan por defecto separados por comas sin espacio entre ellos (como vienen del JSON). ¿Recorrer el array para insertar un espacio antes de cada nombre excepto del primero?. _Solucionado usando '.join(\', \')'_:
+~~~~
+{{thisProject.roles.join(', ')}}
+~~~~

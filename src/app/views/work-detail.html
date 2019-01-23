@@ -21,9 +21,10 @@
       <div class="col-xs-12 col-sm-12 col-md-8">
 
         <section>
-          {{thisProject.description}}
+          <div [innerHTML]="thisProject.description"></div>
+          
           <p><strong>Role</strong><br/>
-          {{thisProject.roles}}</p>
+          {{thisProject.roles.join(', ')}}</p>
         </section>
 
       </div>
