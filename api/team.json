@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 1,
+    "name" : "John Doe",
+    "shortname" : "john-doe",
+    "position" : "The Designer",
+    "highlight_image" : {
+      "path" : "images/about-images/about-image-1.jpg",
+      "alt" : "John Doe - The Designer"
+    }
+  },
+  {
+    "id" : 2,
+    "name" : "Kristy Roan",
+    "shortname" : "kristy-roan",
+    "position" : "The Manager",
+    "highlight_image" : {
+      "path" : "images/about-images/about-image-2.jpg",
+      "alt" : "Kristy Roan - The Manager"
+    }
+  },
+  {
+    "id" : 3,
+    "name" : "Jason Takas",
+    "shortname" : "jason-takas",
+    "position" : "The Founder",
+    "highlight_image" : {
+      "path" : "images/about-images/about-image-3.jpg",
+      "alt" : "Jason Takas - The Founder"
+    }
+  }
+]
