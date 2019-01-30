@@ -12,6 +12,8 @@ import { FooterComponent } from './components/footer.component';
 import { HomeComponent } from './components/home.component';
 import { WorkCardComponent } from './components/work-card.component';
 import { WorkDetailComponent } from './components/work-detail.component';
+import { AboutComponent } from './components/about.component';
+import { TeamMemberComponent } from './components/team-member.component';
 
 // Pipes
 import { ExceptIndexPipe } from './pipes/exceptIndex.pipe';
@@ -27,6 +29,8 @@ import { SecondHalfPipe } from './pipes/secondHalf.pipe';
     HomeComponent,
     WorkCardComponent,
     WorkDetailComponent,
+    AboutComponent,
+    TeamMemberComponent,
     ExceptIndexPipe,
     FirstIndexPipe,
     FirstHalfPipe,

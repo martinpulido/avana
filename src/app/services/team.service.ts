@@ -8,17 +8,17 @@ const httpOptions = {
 
 @Injectable()
 
-export class ProjectService {
+export class TeamService {
     public url:string;
 
     constructor(
         private _http:HttpClient
     ){
-        this.url = GLOBAL.url + 'projects.json';
+        this.url = GLOBAL.url + 'team.json';
     }
 
-    getProjects(){
-        // Function to get all projects info
+    getTeam(){
+        // Function to get team info
         return this._http.get( this.url );
     }
 }
