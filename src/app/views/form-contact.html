@@ -1,0 +1,23 @@
+<!-- contat-from-wrapper -->
+<div class="contat-from-wrapper">
+  <div id="message"></div>
+  
+  <form #formContact="ngForm" (ngSubmit)="onSubmit()" name="cform" id="cform">
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+        <input type="text" #name="ngModel" [(ngModel)]="contact.name" name="name" id="name" title="Whats your name" placeholder="Whats your name" value="" required>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+        <input type="email" #email="ngModel" [(ngModel)]="contact.email" name="email" id="email" title="Whats your email" placeholder="Whats your email" value="" required>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <textarea #comments="ngModel" [(ngModel)]="contact.comments" name="comments" id="comments" cols="" rows="" title="Whats in your mind" placeholder="Whats in your mind" required></textarea>
+    <div class="clearfix"></div>
+    
+    <input name="" type="submit" value="{{title}}" >
+    <div id="simple-msg"></div>
+  </form>
+</div>
+<!-- contat-from-wrapper -->
