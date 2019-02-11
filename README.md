@@ -26,6 +26,12 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 * Para no montar una API REST propia con unos datos propios voy a crear solamente un JSON con los datos de cada uno de los proyectos en un directorio fuera de _src_ y será el que llame por AJAX con _HttpClient_.
 * La función que hace que aparezcan los proyectos en la Home al hacer scroll se ejecuta en la carga del documento, antes de que hayamos obtenido los datos del JSON (así estaba en la plantilla). Hay que lanzar esa función después de que los datos se hayan recuperado. (En relación con el primer punto del [TODO](#todo)
 * Esa misma función también se aplica en las imágenes de detalle de los trabajos.
+* Las validaciones del formulario se van a realizar en front (en la plantilla estática se hacen en backend por cada _submit_ del formulario) respetando el orden de la plantilla estática:
+  1. Valida que se haya rellenado el nombre.
+  2. Valida que se haya rellenado el email.
+  3. Valida que el formato de email sea correcto.
+  4. Valida que se haya rellenado el mensaje.
+  5. Si es correcto, entonces envía el formulario, éste desaparece y aparece un mensaje de enviado. (Con mensaje en capa superior). (Replicando el proceso y animación definido en el _jquery.contact.js_ de la plantilla.)
 
 ## TODO
 - [ ] Ver cómo llamar una función de JavaScript externa a TypeScript cuando la carga de los datos del JSON haya finalizado.
