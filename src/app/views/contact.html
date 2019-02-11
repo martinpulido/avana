@@ -18,10 +18,16 @@
     <!-- map -->
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="demo-wrapper">
-        <div id="surabaya"></div>
+        
+        <!-- this creates a google map on the page with the given lat/lng from -->
+        <!-- the component as the initial center of the map: -->
+        <agm-map [latitude]="-7.245217594087794" [longitude]="112.74455556869509" [zoom]="16">
+          <agm-marker [latitude]="-7.245217594087794" [longitude]="112.74455556869509"></agm-marker>
+        </agm-map>
+        
       </div>
     </div>
-    <!-- map -->
+<!-- map -->
 
     <div class="clearfix"></div>
 

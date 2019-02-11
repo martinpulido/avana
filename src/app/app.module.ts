@@ -7,6 +7,8 @@ import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent } from './app.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 // Components
 import { HeaderComponent } from './components/header.component';
 import { FooterComponent } from './components/footer.component';
@@ -45,6 +47,9 @@ import { SecondHalfPipe } from './pipes/secondHalf.pipe';
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyABX-TBq8DQ5k2rT2oy9oGYJEg67kbs17E'
+    }),
     routing
   ],
   providers: [
