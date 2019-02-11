@@ -114,11 +114,16 @@ $(document).ready(function() {
 
 	
 
-		$('#menu-button').click(function(){
+	$('#menu-button').click(function(){
 
 		$(this).toggleClass('open');
 
 	});
+
+	$('.navy li a').click(function(){
+		$('#menu-button').removeClass('menu-opened open');
+		$('.navy ul').slideUp().removeClass('open');
+	})
 
 	
 
