@@ -19,6 +19,7 @@ import { AboutComponent } from './components/about.component';
 import { TeamMemberComponent } from './components/team-member.component';
 import { ContactComponent } from './components/contact.component';
 import { FormContactComponent } from './components/form-contact.component';
+import { BlogComponent } from './components/blog.component';
 
 // Pipes
 import { ExceptIndexPipe } from './pipes/exceptIndex.pipe';
@@ -38,6 +39,8 @@ import { SecondHalfPipe } from './pipes/secondHalf.pipe';
     TeamMemberComponent,
     ContactComponent,
     FormContactComponent,
+    BlogComponent,
+    
     ExceptIndexPipe,
     FirstIndexPipe,
     FirstHalfPipe,
