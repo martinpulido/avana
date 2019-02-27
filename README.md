@@ -32,6 +32,14 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
   3. Valida que el formato de email sea correcto.
   4. Valida que se haya rellenado el mensaje.
   5. Si es correcto, entonces envía el formulario, éste desaparece y aparece un mensaje de enviado. (Con mensaje en capa superior). (Replicando el proceso y animación definido en el _jquery.contact.js_ de la plantilla.)
+* En la plantilla original del Blog aunque aparecen todos los post con la misma fecha, se deduce por la animación y el orden en el que aparecen que la distribución es la siguiente:
+  1. Los post se ordenan por fecha de forma descendente: el primer post en la lista -tanto en la página como en la respuesta _JSON_ del servicio- es el último post escrito.
+  2. El post que aparece junto al título, _claim_ y descipción de la página Blog, será el primer post que viene en la lista.
+  3. El HTML de la plantilla está dividido en dos columnas (izquierda y derecha) y dentro de cada columna se listan los post, primero se están escribiendo los elementos de la izquierda y posteriormente, los de la derecha. (Aunque la animación con el scroll luego los muestre pareados).
+  4. Explicado esto, el orden en el que deberemos de pintar los post será el siguiente:
+      1. El primer post (o post destacado, si quisiéramos que la respuesta del servicio fuera así), junto al título, _claim_ y descripción.
+      2. Los post cuyo orden en el listado sea par y pintarlos en la columna de la izquierda.
+      3. Los post cuyo orden en el listado sea impar, excepto el primero, y pintarlos en la columna de la derecha.
 
 ## TODO
 - [ ] Ver cómo llamar una función de JavaScript externa a TypeScript cuando la carga de los datos del JSON haya finalizado.
