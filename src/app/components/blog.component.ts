@@ -25,7 +25,6 @@ export class BlogComponent{
 
     ngOnInit(){
         this.getPosts();
-        console.log('blog.component.ts cargado')
     }
 
     getPosts(){

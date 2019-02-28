@@ -20,6 +20,7 @@ import { TeamMemberComponent } from './components/team-member.component';
 import { ContactComponent } from './components/contact.component';
 import { FormContactComponent } from './components/form-contact.component';
 import { BlogComponent } from './components/blog.component';
+import { BlogCardComponent } from './components/blog-card.component';
 
 // Pipes
 import { ExceptIndexPipe } from './pipes/exceptIndex.pipe';
@@ -42,6 +43,7 @@ import { EvenPipe } from './pipes/even.pipe';
     ContactComponent,
     FormContactComponent,
     BlogComponent,
+    BlogCardComponent,
     
     ExceptIndexPipe,
     FirstIndexPipe,

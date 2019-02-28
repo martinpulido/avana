@@ -12,21 +12,13 @@
       <ul class="grid-lod effect-2_" id="grid">
         <li *ngFor="let article of articles | even">
 
-          <section class="blog-content">
-            <a href="blog-details.html">
-              <figure>
-                <div class="post-date"> 
-                  <!--{{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }}-->
-                  <!--span>24</span> July 2016-->
-                  <span>{{article.date | date: 'dd'}}</span> {{article.date | date: 'MMMM'}} {{article.date | date: 'y'}}
-                </div>
-                <img src="../../assets/{{article.portrait_image.path}}" alt="{{article.portrait_image.alt}}" class="img-responsive"/>
-              </figure>
-            </a>
-            <article>
-              {{article.title}}
-            </article>
-          </section>
+          <blog-card
+            [data-title]="article.title"
+            [data-shortname]="article.shortname"
+            [data-date]="article.date"
+            [data-image]="article.portrait_image.path"
+            [data-image-alt]="article.portrait_image.alt"
+          ></blog-card>
 
         </li>
       </ul>
@@ -36,21 +28,13 @@
       <ul class="grid-lod effect-2" id="grid">
         <li *ngFor="let article of articles | odd">
 
-          <section class="blog-content">
-            <a href="blog-details.html">
-              <figure>
-                <div class="post-date"> 
-                  <!--{{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }}-->
-                  <!--span>24</span> July 2016-->
-                  <span>{{article.date | date: 'dd'}}</span> {{article.date | date: 'MMMM'}} {{article.date | date: 'y'}}
-                </div>
-                <img src="../../assets/{{article.portrait_image.path}}" alt="{{article.portrait_image.alt}}" class="img-responsive"/>
-              </figure>
-            </a>
-            <article>
-              {{article.title}}
-            </article>
-          </section>
+          <blog-card
+            [data-title]="article.title"
+            [data-shortname]="article.shortname"
+            [data-date]="article.date"
+            [data-image]="article.portrait_image.path"
+            [data-image-alt]="article.portrait_image.alt"
+          ></blog-card>
 
         </li>
       </ul>
