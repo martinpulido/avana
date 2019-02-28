@@ -26,6 +26,8 @@ import { ExceptIndexPipe } from './pipes/exceptIndex.pipe';
 import { FirstIndexPipe } from './pipes/firstIndex.pipe';
 import { FirstHalfPipe } from './pipes/firstHalf.pipe';
 import { SecondHalfPipe } from './pipes/secondHalf.pipe';
+import { OddPipe } from './pipes/odd.pipe';
+import { EvenPipe } from './pipes/even.pipe';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { SecondHalfPipe } from './pipes/secondHalf.pipe';
     ExceptIndexPipe,
     FirstIndexPipe,
     FirstHalfPipe,
-    SecondHalfPipe
+    SecondHalfPipe,
+    OddPipe,
+    EvenPipe
   ],
   imports: [
     BrowserModule,
