@@ -21,6 +21,7 @@ import { ContactComponent } from './components/contact.component';
 import { FormContactComponent } from './components/form-contact.component';
 import { BlogComponent } from './components/blog.component';
 import { BlogCardComponent } from './components/blog-card.component';
+import { BlogDetailComponent } from './components/blog-detail.component';
 
 // Pipes
 import { ExceptIndexPipe } from './pipes/exceptIndex.pipe';
@@ -44,6 +45,7 @@ import { EvenPipe } from './pipes/even.pipe';
     FormContactComponent,
     BlogComponent,
     BlogCardComponent,
+    BlogDetailComponent,
     
     ExceptIndexPipe,
     FirstIndexPipe,

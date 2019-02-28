@@ -1,0 +1,80 @@
+<!-- main -->
+<main role="main-inner-wrapper" class="container">
+  <!-- blog details -->
+  <div class="blog-details">
+    <div *ngIf="thisArticle === null">
+      Loading...
+    </div>
+
+    <div *ngIf="thisArticle !== null">
+      <article class="post-details" id="post-details">
+        <header role="bog-header" class="bog-header text-center">
+          <h3><span>{{thisArticle.date | date: 'dd'}}</span> {{thisArticle.date | date: 'MMMM'}} {{thisArticle.date | date: 'y'}}</h3>
+          <h2>{{thisArticle.title}}</h2>
+        </header>
+        <figure>
+          <img src="./assets/{{thisArticle.highlight_image.path}}" alt="{{thisArticle.highlight_image.alt}}" class="img-responsive"/>
+        </figure>
+        <div class="enter-content" [innerHTML]="thisArticle.wysiwyg"></div>
+      </article>
+
+      <!-- Comments -->
+      <div class="comments-pan" *ngIf="thisArticle.comments !== null || thisArticle.comments.length !== 0">
+        <h3 *ngIf="thisArticle.comments.length > 1">{{thisArticle.comments.length}} Comments</h3>
+        <h3 *ngIf="thisArticle.comments.length == 1">{{thisArticle.comments.length}} Comment</h3>
+        <ul class="comments-reply">
+          <li *ngFor="let comment of thisArticle.comments">
+            <figure>
+              <img src="./assets/{{comment.avatar_image.path}}" alt="comment.avatar_image.alt" class="img-responsive"/>
+            </figure>
+            <section>
+              <h4>{{comment.name}} <a href="#">Reply</a></h4>
+              <div class="date-pan">{{comment.date | date: 'MMMM'}} {{comment.date | date: 'dd'}}, {{comment.date | date: 'y'}}</div>
+              <div [innerHTML]="comment.wysiwyg"></div>
+            </section>
+
+            <ol class="reply-pan" *ngIf="comment.comments !== null || comment.comments.length !== 0">
+              <li *ngFor="let subcomment of comment.comments">
+                <figure>
+                  <img src="./assets/{{subcomment.avatar_image.path}}" alt="{{subcomment.avatar_image.alt}}" class="img-responsive"/>
+                </figure>
+                <section>
+                  <h4>{{subcomment.name}}  <a href="#">Reply</a></h4>
+                  <div class="date-pan">{{subcomment.date | date: 'MMMM'}} {{subcomment.date | date: 'dd'}}, {{subcomment.date | date: 'y'}}</div>
+                  <div [innerHTML]="subcomment.wysiwyg"></div>
+                </section>
+              </li>
+            </ol>
+          </li>
+        </ul>
+
+        <div class="commentys-form">
+          <h4>Leave a comment</h4>
+          <div class="row">
+            <form action="" method="get">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <input name="" type="text" placeholder="Whats your name *">
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <input name="" type="email" placeholder="Whats your email *">
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <input name="" type="url" placeholder="Runing a Website">
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <textarea name="" cols="" rows="" placeholder="Whats in your mind"></textarea>
+              </div>
+              <div class="text-center">
+                <input name="" type="button" value="Post Comment">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- blog details -->
+</main>
+<!-- main -->
