@@ -1,6 +1,6 @@
 <!-- Blog Card -->
 <section class="blog-content">
-  <a href="blog-details.html">
+  <a [routerLink]="['/blog/', shortname]">
     <figure>
       <div class="post-date"> 
         <span>{{date | date: 'dd'}}</span> {{date | date: 'MMMM'}} {{date | date: 'y'}}
