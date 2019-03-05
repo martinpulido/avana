@@ -9,6 +9,7 @@ import { ContactComponent } from './components/contact.component';
 //import { FormContactComponent } from './components/form-contact.component';
 import { BlogComponent } from './components/blog.component';
 import { BlogDetailComponent } from './components/blog-detail.component';
+//import { FormReplyComponent } from './components/form-reply.component';
 
 const appRoutes: Routes = [
     {path: '', redirectTo: 'works', pathMatch: 'full' }, //<-- Cambiado para que redirija a /works

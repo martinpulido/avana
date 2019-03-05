@@ -40,6 +40,7 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
       1. El primer post (o post destacado, si quisiéramos que la respuesta del servicio fuera así), junto al título, _claim_ y descripción.
       2. Los post cuyo orden en el listado sea par y pintarlos en la columna de la izquierda.
       3. Los post cuyo orden en el listado sea impar, excepto el primero, y pintarlos en la columna de la derecha.
+* En el formulario de envío de comentario (dentro del detalle de cada artículo del blog) de la plantilla original, no hay ni validación ni simulación de envío de datos.
 
 ## TODO
 - [ ] Ver cómo llamar una función de JavaScript externa a TypeScript cuando la carga de los datos del JSON haya finalizado.
