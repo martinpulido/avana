@@ -3,6 +3,9 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { BlogService } from '../services/blog.service';
 import { Blog } from '../models/blog';
 
+declare var jQuery:any;
+declare var $:any;
+
 @Component({
     selector: 'blog-detail',
     templateUrl: '../views/blog-detail.html',

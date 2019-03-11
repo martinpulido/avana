@@ -6,7 +6,7 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 
 ## Web Estática vs Single Page Application
 * *Web*: http://www.designstub.com/projects/avana-minimal-portfolio-template-build-bootstrap/
-* *Vue*: _El código se puede consultar en este mismo proyecto de GitHub. La versión build no está disponible todavía.
+* *Angular*: _El código se puede consultar en este mismo proyecto de GitHub. La versión build no está disponible todavía.
 
 ## Herramientas utilizadas
 
@@ -40,7 +40,7 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
       1. El primer post (o post destacado, si quisiéramos que la respuesta del servicio fuera así), junto al título, _claim_ y descripción.
       2. Los post cuyo orden en el listado sea par y pintarlos en la columna de la izquierda.
       3. Los post cuyo orden en el listado sea impar, excepto el primero, y pintarlos en la columna de la derecha.
-* En el formulario de envío de comentario (dentro del detalle de cada artículo del blog) de la plantilla original, no hay ni validación ni simulación de envío de datos.
+* En el formulario de envío de comentario (dentro del detalle de cada artículo del blog) de la plantilla original, no hay ni validación ni simulación de envío de datos. Para la integración de Angular, se replican las validaciones y respuesta de envío del formulario de contacto. Además, al hacer clic en cualquier enlace de _Reply_ la página hace scroll hacia el formulario de respuesta.
 
 ## TODO
 - [ ] Ver cómo llamar una función de JavaScript externa a TypeScript cuando la carga de los datos del JSON haya finalizado.

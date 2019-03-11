@@ -1,22 +1,23 @@
-<div class="commentys-form">
+<div class="commentys-form" id="reply-form-wrapper">
   <h4>{{title}}</h4>
   <div class="row">
-    <form action="" method="get">
+    <div id="message" class="col-xs-12"></div>
+    <form #formComment="ngForm" (ngSubmit)="onSubmit()" id="commentForm">
       <div class="col-xs-12 col-sm-4 col-md-4">
-        <input name="" type="text" placeholder="Whats your name *">
+        <input type="text" #name="ngModel" [(ngModel)]="comment.name" name="name" id="name" title="Name" placeholder="Whats your name *" value="" required>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4">
-        <input name="" type="email" placeholder="Whats your email *">
+        <input type="email" #email="ngModel" [(ngModel)]="comment.email" name="email" id="email" title="Email" placeholder="Whats your email *" value="" required>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4">
-        <input name="" type="url" placeholder="Runing a Website">
+        <input type="url" #website="ngModel" [(ngModel)]="comment.url" name="url" id="url" title="Website" placeholder="Runing a Website" value="">
       </div>
       <div class="clearfix"></div>
       <div class="col-xs-12 col-sm-12 col-md-12">
-        <textarea name="" cols="" rows="" placeholder="Whats in your mind"></textarea>
+        <textarea #comments="ngModel" [(ngModel)]="comment.comments" name="comments" id="comments" cols="" rows="" placeholder="Whats in your mind *" title="Tell us your comment" required></textarea>
       </div>
       <div class="text-center">
-        <input name="" type="button" value="{{buttonTitle}}">
+        <input name="" type="submit" value="{{buttonTitle}}" class="button">
       </div>
     </form>
   </div>

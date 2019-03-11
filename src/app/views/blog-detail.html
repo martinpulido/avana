@@ -28,7 +28,7 @@
               <img src="./assets/{{comment.avatar_image.path}}" alt="comment.avatar_image.alt" class="img-responsive"/>
             </figure>
             <section>
-              <h4>{{comment.name}} <a href="#">Reply</a></h4>
+              <h4>{{comment.name}} <a href="#" class="reply">Reply</a></h4>
               <div class="date-pan">{{comment.date | date: 'MMMM'}} {{comment.date | date: 'dd'}}, {{comment.date | date: 'y'}}</div>
               <div [innerHTML]="comment.wysiwyg"></div>
             </section>
@@ -39,7 +39,7 @@
                   <img src="./assets/{{subcomment.avatar_image.path}}" alt="{{subcomment.avatar_image.alt}}" class="img-responsive"/>
                 </figure>
                 <section>
-                  <h4>{{subcomment.name}}  <a href="#">Reply</a></h4>
+                  <h4>{{subcomment.name}}  <a href="#" class="reply">Reply</a></h4>
                   <div class="date-pan">{{subcomment.date | date: 'MMMM'}} {{subcomment.date | date: 'dd'}}, {{subcomment.date | date: 'y'}}</div>
                   <div [innerHTML]="subcomment.wysiwyg"></div>
                 </section>
