@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { BlogService } from '../services/blog.service';
 import { Blog } from '../models/blog';
@@ -20,13 +21,18 @@ export class BlogDetailComponent {
     constructor(
         private _blogService:BlogService,
         private _route: ActivatedRoute,
-        private _router: Router
+        private _router: Router,
+        private _titleService: Title
     ){
         this.thisArticle = null;
     }
 
     ngOnInit(){
         this.getArticle();
+    }
+
+    setTitle( newTitle: String ){
+        this._titleService.setTitle( ':: avana LLC | ' + newTitle + ' ::' );
     }
 
     getArticle(){
@@ -44,6 +50,7 @@ export class BlogDetailComponent {
                         if(this.answer[i].shortname === shortName){
                             this.thisArticle = this.answer[i];
                             console.log(this.thisArticle);
+                            this.setTitle(this.thisArticle.title);
                             break;
                         }
                     }

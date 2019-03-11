@@ -52,3 +52,4 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 ~~~~
 {{thisProject.roles.join(', ')}}
 ~~~~
+- [X] Actualizar dinámicamente el `<title>` de la página al navegar por cada sección.

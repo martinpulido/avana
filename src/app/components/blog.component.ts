@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { BlogService } from '../services/blog.service';
 import { Blog } from '../models/blog';
 
@@ -16,7 +17,8 @@ export class BlogComponent{
     public articles: Blog;
 
     constructor(
-        private _blogService: BlogService
+        private _blogService: BlogService,
+        private _titleService: Title
     ){
         this.title = 'News';
         this.claim = 'Updates from studio';
@@ -24,7 +26,12 @@ export class BlogComponent{
     }
 
     ngOnInit(){
+        this.setTitle('Blog');
         this.getPosts();
+    }
+
+    setTitle( newTitle: String ){
+        this._titleService.setTitle( ':: avana LLC | ' + newTitle + ' ::' );
     }
 
     getPosts(){

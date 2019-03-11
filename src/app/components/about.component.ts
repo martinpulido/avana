@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { AboutService } from '../services/about.service';
 import { TeamService } from '../services/team.service';
 import { Team } from '../models/team';
@@ -19,7 +20,8 @@ export class AboutComponent {
 
     constructor(
         private _aboutService: AboutService,
-        private _teamService: TeamService
+        private _teamService: TeamService,
+        private _titleService: Title
     ){
         this.title = null;
         this.claim = null;
@@ -28,8 +30,13 @@ export class AboutComponent {
     }
 
     ngOnInit(){
+        this.setTitle('About');
         this.getAboutInfo();
         this.getTeamInfo();
+    }
+
+    setTitle( newTitle: String ){
+        this._titleService.setTitle( ':: avana LLC | ' + newTitle + ' ::' );
     }
 
     getAboutInfo(){

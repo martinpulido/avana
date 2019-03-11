@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'contact',
@@ -11,10 +12,20 @@ export class ContactComponent {
     public phone:string;
     public mail:string;
 
-    constructor(){
+    constructor(
+        private _titleService: Title
+    ){
         this.title = 'Hey Thr!';
         this.claim = 'we love to hear you.';
         this.phone = '+8197654321';
         this.mail = 'contact@avana.com';
+    }
+
+    ngOnInit(){
+        this.setTitle('Contact');
+    }
+
+    setTitle( newTitle: String ){
+        this._titleService.setTitle( ':: avana LLC | ' + newTitle + ' ::' );
     }
 }

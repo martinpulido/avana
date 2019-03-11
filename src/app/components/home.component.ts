@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ProjectService } from '../services/project.service';
 import { Project } from '../models/project';
 
@@ -16,7 +17,8 @@ export class HomeComponent{
     public projects:Project[];
 
     constructor(
-        private _projectService: ProjectService
+        private _projectService: ProjectService,
+        private _titleService: Title
     ){
         this.title = 'avana';
         this.claim = 'A Brand new Agency.';
@@ -24,7 +26,12 @@ export class HomeComponent{
     }
 
     ngOnInit(){
+        this.setTitle();
         this.getProjects();
+    }
+
+    setTitle(){
+        this._titleService.setTitle( ':: avana LLC ::' );
     }
 
     getProjects(){

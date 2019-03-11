@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { ProjectService } from '../services/project.service';
 import { Project } from '../models/project';
@@ -17,13 +18,18 @@ export class WorkDetailComponent {
     constructor(
         private _projectService:ProjectService,
         private _route: ActivatedRoute,
-        private _router: Router
+        private _router: Router,
+        private _titleService: Title
     ){
         this.thisProject = null;
     }
 
     ngOnInit(){
         this.getProject();
+    }
+
+    setTitle( newTitle: String ){
+        this._titleService.setTitle( ':: avana LLC | ' + newTitle + ' ::' );
     }
 
     getProject(){
@@ -41,6 +47,7 @@ export class WorkDetailComponent {
                         if(this.answer[i].shortname === shortName){
                             this.thisProject = this.answer[i];
                             console.log(this.thisProject);
+                            this.setTitle(this.thisProject.title);
                             break;
                         }
                     }
