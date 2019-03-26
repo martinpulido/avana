@@ -2,7 +2,7 @@ export class Comment{
     constructor(
         public name: string,
         public email: string,
-        public website: string,
+        public url: string,
         public comments: string
     ){}
 }
