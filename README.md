@@ -6,7 +6,7 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 
 ## Web Estática vs Single Page Application
 * *Web*: http://www.designstub.com/projects/avana-minimal-portfolio-template-build-bootstrap/
-* *Angular*: _El código se puede consultar en este mismo proyecto de GitHub. La versión build no está disponible todavía.
+* *Angular*: https://martinpulido.github.io/avana/works.
 
 ## Herramientas utilizadas
 
@@ -53,3 +53,4 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 {{thisProject.roles.join(', ')}}
 ~~~~
 - [X] Actualizar dinámicamente el `<title>` de la página al navegar por cada sección.
+- [ ] Parece que hay algún problema al acceder directamente a las URLs de las páginas de la versión en producción que no resuelve bien el enrutamiento.
