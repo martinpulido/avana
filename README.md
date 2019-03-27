@@ -41,6 +41,7 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
       2. Los post cuyo orden en el listado sea par y pintarlos en la columna de la izquierda.
       3. Los post cuyo orden en el listado sea impar, excepto el primero, y pintarlos en la columna de la derecha.
 * En el formulario de envío de comentario (dentro del detalle de cada artículo del blog) de la plantilla original, no hay ni validación ni simulación de envío de datos. Para la integración de Angular, se replican las validaciones y respuesta de envío del formulario de contacto. Además, al hacer clic en cualquier enlace de _Reply_ la página hace scroll hacia el formulario de respuesta.
+* Navegando en la versión de producción me doy cuenta que en móvil el orden del listado del blog es columna izquierda primero y columna derecha después, mientras que en tablet o escritorio se recuperan las dos columnas. Por tanto el orden del HTML no coincide con el orden visual y en una columna aparece desordenado. (En el [TODO](#todo) añado una tarea para intentar arreglar esto)
 
 ## TODO
 - [ ] Ver cómo llamar una función de JavaScript externa a TypeScript cuando la carga de los datos del JSON haya finalizado.
@@ -54,3 +55,4 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 ~~~~
 - [X] Actualizar dinámicamente el `<title>` de la página al navegar por cada sección.
 - [ ] Parece que hay algún problema al acceder directamente a las URLs de las páginas de la versión en producción que no resuelve bien el enrutamiento.
+- [ ] Cambiar el HTML y los CSS del listado de artículos del Blog para que no haya inconsistencias en cuanto al orden de los elementos.
