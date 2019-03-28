@@ -54,5 +54,5 @@ Para ello he añadido dos enlaces a este README donde consultar la versión de l
 {{thisProject.roles.join(', ')}}
 ~~~~
 - [X] Actualizar dinámicamente el `<title>` de la página al navegar por cada sección.
-- [ ] Parece que hay algún problema al acceder directamente a las URLs de las páginas de la versión en producción que no resuelve bien el enrutamiento.
+- [X] Parece que hay algún problema al acceder directamente a las URLs de las páginas de la versión en producción que no resuelve bien el enrutamiento. _Solucionado importando `HashLocationStrategy, LocationStrategy` y asignándolo a los `providers` según este enlace: [Angular 2 Routing : 404 page not found on refresh](https://medium.com/wineofbits/angular-2-routing-404-page-not-found-on-refresh-a9a0f5786268#b1b1)
 - [ ] Cambiar el HTML y los CSS del listado de artículos del Blog para que no haya inconsistencias en cuanto al orden de los elementos.
