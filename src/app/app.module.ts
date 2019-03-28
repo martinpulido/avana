@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent } from './app.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AgmCoreModule } from '@agm/core';
 
@@ -67,7 +68,8 @@ import { EvenPipe } from './pipes/even.pipe';
   ],
   providers: [
     Title,
-    appRoutingProviders
+    appRoutingProviders,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
